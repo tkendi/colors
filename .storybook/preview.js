@@ -7,3 +7,14 @@ export const parameters = {
     },
   },
 }
+
+export const decorators = [
+  (Story) => {
+    return (
+      <>
+        <Story />
+        <div id="__root" />
+      </>
+    );
+  },
+];

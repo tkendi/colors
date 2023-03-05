@@ -11,6 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
@@ -33,6 +34,7 @@
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
     "eslint-plugin-storybook": "^0.6.11",
-    "sb": "^6.5.16"
+    "sb": "^6.5.16",
+    "tsconfig-paths-webpack-plugin": "^4.0.0"
   }
 }
