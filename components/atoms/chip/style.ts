@@ -2,7 +2,7 @@ import { styled } from "@/styles/stitches.config";
 
 export const ChipBackgropund = styled("div", {
   width: "100%",
-  height: "158px",
+  height: "156px",
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
@@ -23,5 +23,6 @@ export const ChipColorBackground = styled("div", {
 export const ChipColorInfoBox = styled("div", {
   width: "100%",
   display: "flex",
-  marginTop: "12px"
+  flexDirection: "column",
+  marginTop: "12px",
 });

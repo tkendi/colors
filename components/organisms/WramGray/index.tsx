@@ -18,7 +18,12 @@ const WarmGrayOrganism = () => {
           <ChipBackgropund key={`${color[0]}-${index}`}>
             <ChipColorBackground css={{ backgroundColor: color[1] }} />
             <ChipColorInfoBox>
-              <Text css={{ marginLeft: "12px" }}>{color[0]}</Text>
+              <Text css={{ margin: "0px", marginLeft: "12px" }}>
+                {color[0]}
+              </Text>
+              <Text css={{ margin: "0px", marginLeft: "12px" }}>
+                {color[1]}
+              </Text>
             </ChipColorInfoBox>
           </ChipBackgropund>
         );
