@@ -2,23 +2,17 @@ import React from "react";
 
 import { Text } from "@/components/atoms/Text";
 
-import PrimaryOrganism from "@/components/organisms/Primary";
-import SuccessOrganism from "@/components/organisms/Success";
+import ColorGridOrganism from "@/components/organisms/ColorGrid";
 import { ColorContext } from "@/contexts/color.context";
-import { themes } from "@/styles/theme";
 
-const ColorsTemplate = () => {
-  console.log(themes)
+interface Props {
+  color: string;
+}
+
+const ColorsTemplate = ({ color = "Primary" }: Props) => {
   return (
-    <ColorContext.Provider value={themes}>
-      <div>
-        <Text>Primary</Text>
-        <PrimaryOrganism />
-      </div>
-      <div>
-        <Text>Success</Text>
-        <SuccessOrganism />
-      </div>
+    <ColorContext.Provider value={color}>
+      <ColorGridOrganism />
     </ColorContext.Provider>
   );
 };

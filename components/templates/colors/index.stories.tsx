@@ -1,18 +1,23 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import Colors from ".";
+import ColorsTemplate from ".";
 
 export default {
-  title: "Colors/All",
-  component: Colors,
+  title: "Colors/Color",
+  component: ColorsTemplate,
   argTypes: {
-    backgroundColor: { control: "color" },
+    color: {
+      control: {
+        type: "select",
+        options: ["Primary", "Info", "Warning", "Danger", "Success"]
+      }
+    }
   },
-} as ComponentMeta<typeof Colors>;
+} as ComponentMeta<typeof ColorsTemplate>;
 
-const Template: ComponentStory<typeof Colors> = args => (
-  <Colors />
+const Template: ComponentStory<typeof ColorsTemplate> = args => (
+  <ColorsTemplate {...args} />
 );
 
 export const Primary = Template.bind({});
