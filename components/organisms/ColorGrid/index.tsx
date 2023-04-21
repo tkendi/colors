@@ -11,10 +11,6 @@ import { styled } from "@/styles/stitches.config";
 import { themes } from "@/styles/theme";
 import { ColorContext } from "@/contexts/color.context";
 
-interface Props {
-  color: string
-}
-
 const ColorGridOrganism = () => {
   const color = useContext(ColorContext)
   return (
