@@ -8,12 +8,13 @@ import {
 } from "@/components/atoms/chip/style";
 
 import { styled } from "@/styles/stitches.config";
-import { STBlueColors } from "@/styles/theme";
+import { SuccessColors } from "@/styles/theme";
 
-const STBlueOrganism = () => {
+
+const SuccessOrganism = () => {
   return (
     <ChipWrap>
-      {Object.entries(STBlueColors).map((color, index) => {
+      {Object.entries(SuccessColors).map((color, index) => {
         return (
           <ChipBackgropund key={`${color[0]}-${index}`}>
             <ChipColorBackground css={{ backgroundColor: color[1] }} />
@@ -32,7 +33,7 @@ const STBlueOrganism = () => {
   );
 };
 
-export default STBlueOrganism;
+export default SuccessOrganism;
 
 const ChipWrap = styled("div", {
   width: "100%",

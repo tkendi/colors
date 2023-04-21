@@ -1,10 +1,13 @@
 import { createStitches } from "@stitches/react";
-import { STBlueColors } from "./theme";
+import { themes  } from "./theme";
 
 export const { theme, styled, css } = createStitches({
   theme: {
     color: {
-      ...STBlueColors,
+      ...themes
     },
+    fonts: {
+      SUIT: 'SUIT Variable, sans-serif'
+    }
   },
 });

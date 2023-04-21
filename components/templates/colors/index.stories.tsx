@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Colors from ".";
 
 export default {
-  title: "Colors/Template",
+  title: "Colors/All",
   component: Colors,
   argTypes: {
     backgroundColor: { control: "color" },

@@ -1,26 +1,25 @@
 import React from "react";
 
 import { Text } from "@/components/atoms/Text";
-import BlueGrayOrganism from "@/components/organisms/BlueGray";
-import STBlueOrganism from "@/components/organisms/STBlue";
-import WarmGrayOrganism from "@/components/organisms/WramGray";
+
+import PrimaryOrganism from "@/components/organisms/Primary";
+import SuccessOrganism from "@/components/organisms/Success";
+import { ColorContext } from "@/contexts/color.context";
+import { themes } from "@/styles/theme";
 
 const ColorsTemplate = () => {
+  console.log(themes)
   return (
-    <>
+    <ColorContext.Provider value={themes}>
       <div>
-        <Text>BlueGray</Text>
-        <BlueGrayOrganism />
+        <Text>Primary</Text>
+        <PrimaryOrganism />
       </div>
       <div>
-        <Text>WarmGray</Text>
-        <WarmGrayOrganism />
+        <Text>Success</Text>
+        <SuccessOrganism />
       </div>
-      <div>
-        <Text>STBlue</Text>
-        <STBlueOrganism />
-      </div>
-    </>
+    </ColorContext.Provider>
   );
 };
 
