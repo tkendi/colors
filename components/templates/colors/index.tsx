@@ -1,15 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import { Text } from "@/components/atoms/Text";
-
-import ColorGridOrganism from "@/components/organisms/ColorGrid";
-import { ColorContext } from "@/contexts/color.context";
+import ColorGridOrganism from '@/components/organisms/ColorGrid';
+import { ColorContext } from '@/contexts/color.context';
 
 interface Props {
   color: string;
 }
 
-const ColorsTemplate = ({ color = "Primary" }: Props) => {
+const ColorsTemplate = ({ color = 'Primary' }: Props) => {
   return (
     <ColorContext.Provider value={color}>
       <ColorGridOrganism />

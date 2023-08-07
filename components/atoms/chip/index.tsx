@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { Text } from "@/components/atoms/Text";
+import { Text } from '@/components/atoms/Text';
+
 import {
   ChipBackgropund,
   ChipColorBackground,
   ChipColorInfoBox,
-} from "./style";
+} from './style';
 
 interface Props {
   title: string;

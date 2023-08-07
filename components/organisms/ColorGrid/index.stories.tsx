@@ -1,17 +1,17 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import ColorGridOrganism from ".";
+import ColorGridOrganism from '.';
 
 export default {
-  title: "Colors/Template",
+  title: 'Colors/Template',
   component: ColorGridOrganism,
   argTypes: {
-    backgroundColor: { control: "color" },
+    backgroundColor: { control: 'color' },
   },
 } as ComponentMeta<typeof ColorGridOrganism>;
 
-const Template: ComponentStory<typeof ColorGridOrganism> = args => (
+const Template: ComponentStory<typeof ColorGridOrganism> = (args) => (
   <ColorGridOrganism />
 );
 
