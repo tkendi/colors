@@ -22,7 +22,7 @@ export const SuccessColors = {
   "Success900": "#0E5C07",
 }
 
-export const InfoColors ={
+export const InfoColors = {
   "Info100": "#CAFCEE",
   "Info200": "#96FAE6",
   "Info300": "#60F1E0",
@@ -46,7 +46,7 @@ export const WarningColors = {
   "Warning900": "#6F3200",
 }
 
-export const DangerColors ={
+export const DangerColors = {
   "Danger100": "#FED7D9",
   "Danger200": "#FEB0BA",
   "Danger300": "#FC89A3",
