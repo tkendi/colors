@@ -20,10 +20,14 @@ const ColorGridOrganism = () => {
           if (!key.includes(color)) return;
           return (
             <ChipBackgropund key={`${key}-${index}`}>
-              <ChipColorBackground css={{ backgroundColor: value ?? "#000000" }} />
+              <ChipColorBackground
+                css={{ backgroundColor: value ?? '#000000' }}
+              />
               <ChipColorInfoBox>
                 <Text css={{ margin: '0px', marginLeft: '12px' }}>{key}</Text>
-                <Text css={{ margin: '0px', marginLeft: '12px' }}>{value ?? "Not found Color"}</Text>
+                <Text css={{ margin: '0px', marginLeft: '12px' }}>
+                  {value ?? 'Not found Color'}
+                </Text>
               </ChipColorInfoBox>
             </ChipBackgropund>
           );

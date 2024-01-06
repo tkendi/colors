@@ -1,17 +1,17 @@
-import { createStitches } from "@stitches/react";
-import { themes } from "./theme";
-import { generateMdeia } from "./breakPoints/createMedia";
+import { createStitches } from '@stitches/react';
+import { themes } from './theme';
+import { generateMdeia } from './breakPoints/createMedia';
 
 export const { theme, styled, css } = createStitches({
   media: {
-    ...generateMdeia()
+    ...generateMdeia(),
   },
   theme: {
     color: {
-      ...themes
+      ...themes,
     },
     fonts: {
-      SUIT: 'SUIT Variable, sans-serif'
-    }
+      SUIT: 'SUIT Variable, sans-serif',
+    },
   },
 });
